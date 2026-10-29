@@ -1,0 +1,16 @@
+.venv/
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+frontend/node_modules/
+frontend/dist/
+.git/
+.gitignore
+.dockerignore
+.vscode/
+.idea/
+*.log
+.DS_Store
+Thumbs.db

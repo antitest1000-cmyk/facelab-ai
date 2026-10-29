@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-dark-950 text-slate-100 font-sans selection:bg-brand-cyan/20 selection:text-brand-cyan;
+    overflow-x: hidden;
+  }
+}
+
+/* Custom sleek scrollbar for dark UI */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0f111a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #232940;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #414d7a;
+}
+
+/* Glassmorphism utilities */
+.glass-panel {
+  background: rgba(15, 17, 26, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.glass-panel-subtle {
+  background: rgba(20, 23, 36, 0.6);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.glass-card-interactive {
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass-card-interactive:hover {
+  background: rgba(27, 31, 48, 0.85);
+  border-color: rgba(0, 242, 254, 0.3);
+  box-shadow: 0 8px 30px rgba(0, 242, 254, 0.05);
+}
+
+/* Subtle futuristic background grid */
+.bg-grid-pattern {
+  background-size: 32px 32px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+}
